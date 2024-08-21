@@ -12,7 +12,7 @@
         body {
             display: grid;
             grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
-            grid-template-rows: 75px 75px 75px 75px;
+            grid-template-rows: 75px 75px 75px 75px 75px;
             
             
         }
@@ -63,25 +63,18 @@
         .media {
             font-size: 1.6vw;
             padding: 15px;
-            background-color: #da9917;
-            
-            
-            
+            background-color: #da9917;     
         }
         a {
             color: black;
         }
         .main-photo {
             width: 100%;
-            
-
-        
         }
         .heading {
             grid-column: 3 / 8;
             text-align: center;
             font-variant: small-caps;
-    
         }
         .text-info {
             max-width: 30%;
@@ -94,14 +87,106 @@
             opacity: 0.9;
 
         }
+        .footer-content {
+            background-color: rgba(0, 0, 0, 0.938);
+            color: white;
+            width: 100%; 
+            
+            display: flex;
+           /* align-items: center;*/
+            /*justify-content: space-around;*/
+            padding-top: 2vw;
+            flex-wrap: row wrap;    
+        }
+        .linkPartner {
+            display: flex;
+            flex-direction: column;
+        }
+        .linkOnly {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        .footer-logo {
+            
+            /*grid-column: 1 / 2;*/
+            width: 25%;
+            padding: 0.5%;
+        }
+        
+        .Department-links {
+            /*grid-column: 2 / 3;*/
+            /*width: 25%;*/
+            
+        }
+        
+        .aboutUs {
+            
+            /*grid-column: 3 / 4;*/
+            /*width: 25%;*/
+        }
+        .socialLinks {
+            
+           /* grid-column: 4 / 5;*/
+            /*width: 25%;*/
+        }
+        .contactsLinks {
+            /*grid-column: 5 / 6;*/
+            
+        }
+        .FootLogo {
+            width: 90%;
+
+        }
+        ul {
+            list-style: none;
+        }
+        li > a {
+           /* text-decoration: none;*/
+           color: white;
+        }
+        div > h1 {
+            font-size: 1.5vw;
+            text-align: center;
+
+        }
+        .footerLinks {
+            text-align: left;
+            text-decoration: none;
+            padding: 1vw;
+            margin: 1vw;
+        }
+        .bottomFooter {
+            float: left;
+        }
+        .Partners {
+            font-size: 1.5vw;
+        }
+        .partnerLink {
+            margin: 2vw;
+            padding: 2vw;
+        }
+        .partnerLink > p {
+            background-color: #da9917;
+            padding: 1vw;
+            border-radius: 25px;
+            font-weight: bold;
+        }
+        p > a {
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
+    <!--FOUNDATIONS LOGO-->
     <div class="logo-container" class="header">
         <img src="logo.jpeg" class="logo-image">
     </div>
+
+    <!--FOUNDATIONS TITLE-->
     <h1 class="heading">Glowers Foundation</h1>
 
+<!--SOCIAL MEDIA ICONS AND LINKS-->
     <div class="social-media" class="header">
         <a href="#facebook" class="media"><i class="fa-brands fa-facebook-f"></i></a>
         <a href="#instagram" class="media"><i class="fa-brands fa-instagram"></i></a>
@@ -109,21 +194,94 @@
         <a href="#X" class="media"><i class="fa-brands fa-x-twitter"></i></a>
         <a href="#Whatsapp"  class="media"><i class="fa-brands fa-square-whatsapp"></i></a>
         <a href="#linkdn" class="media"><i class="fa-brands fa-linkedin"></i></a>
-
     </div>
+
+<!--HOMEPAGE NAVIGATION LINKS-->
     <div class="Navigation-bar" class="header">
         <a href="#partner" class="menus">Partner with us</a>
         <a href="#programs" class="menus">Programs</a>
         <a href="#About" class="menus">About us</a>
         <a href="#Contact" class="menus">Contuct Us</a>
     </div>
+
+    <!--HOMEPAGE PHOTO AND TEXT INSIDE IT AND FOOTER CONTENT-->
     <div class="photo-holder">
         <img src="cover2.jpeg" class="main-photo">
         <div class="text-info">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
            </p>
         </div>
+
+        <!--FOOTER CONTENT-->
+        <div class="footer-content">
+            <div class="footer-logo">
+               <img src="blacklogo.jpeg" class="FootLogo">
+            </div>
+            
+            <!--department links-->
+           <div class="linkPartner">
+            <div class="linkOnly">
+             <div class="Department-links footerLinks">
+               <h1>Departments</h1>
+               <ul>
+                <li><a href="#Mentorship">Mentorship</a></li>
+                <li><a href="#Intrepreneurship">Intrepreneurship</a></li>
+                <li><a href="#Media">Media</a></li>
+                <li><a href="#Innovation">Innovation</a></li>
+               </ul>
+             </div>
+
+            <!--about us-->
+             <div class="aboutUs footerLinks">
+                <h1>About us</h1>
+                <ul>
+                    <li><a href="#Foundation">Foundation</a></li>
+                    <li><a href="#Leadership">Leadership</a></li>
+                    <li><a href="#Programs">Programs</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#Events">Events</a></li>
+                </ul>
+             </div>
+
+              <!--social links-->  
+             <div class="socialLinks footerLinks">
+                <h1>Socials</h1>
+                <ul>
+                    <li><a href="#facebook">Facebook</a></li>
+                    <li><a href="#Twitter">Twitter / X</a></li>
+                    <li><a href="#Instagram">Instagram</a></li>
+                    <li><a href="#LinkedIn">LinkedIn</a></li>
+                    <li><a href="#Tiktok">Tiktok</a></li>
+                    <li><a href="#Youtube">Youtube</a></li>
+                </ul>
+             </div>
+
+            <!--contact information-->
+             <div class="contactsLinks footerLinks" >
+                <h1>Contacts</h1>
+                <ul>
+                    <li><a href="#Mobile">Mobile</a></li>
+                    <li><a href="#Email">Email</a></li>
+                    <li><a href="Whatsapp">Whatsapp</a></li>
+                </ul>
+             </div>
+            </div>
+
+            <!--Partners-->
+            <div class="bottomFooter Partners">
+                <div>Partners:  <a href="#blessedLink"><img src="blessedLogo.jpeg"></a></div>
+            </div>
         
+            <!--copyright-->
+            <div class="bottomFooter">
+                <p>copyright © 2024 Glowers foundation</p>
+            </div> 
+          </div>
+          <div class="partnerLink">
+            <p><a href="#Partner">Partner with us</a></p>
+          </div>        
+        </div>
     </div>
 
     
